@@ -8,6 +8,5 @@ PersonCache *person = [[PersonCache alloc] init];
     person.book.bookName = @"我的童年";
     person.book.price = 11.2;
     [person writeToFile];
-                           
     PersonCache *cachePerson = [PersonCache createObjectFromFile];
     NSLog(@"%@ %@ %@", cachePerson.dog.name, cachePerson.dog.dogType, cachePerson.book.bookName);
